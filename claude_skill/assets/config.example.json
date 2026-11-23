@@ -1,0 +1,167 @@
+{
+  "schema_version": 1,
+  "note": "Example config. Add a board only after confirming the slug on the employer's careers page and a 200 from the public API. Title lanes A/B/C map to the resume versions in profile.json.",
+  "boards": [
+    {
+      "board": "greenhouse:anthropic",
+      "company": "Anthropic"
+    },
+    {
+      "board": "lever:erg",
+      "company": "ERG (Eastern Research Group)"
+    },
+    {
+      "board": "ashby:cohere",
+      "company": "Cohere"
+    },
+    {
+      "board": "smartrecruiters:Intuitive",
+      "company": "Intuitive Surgical"
+    }
+  ],
+  "simplify": {
+    "enabled": true,
+    "url": "https://raw.githubusercontent.com/SimplifyJobs/New-Grad-Positions/dev/.github/scripts/listings.json",
+    "max_age_days": 14,
+    "skip_sponsorship": [
+      "U.S. Citizenship is Required"
+    ]
+  },
+  "lane_priority": [
+    "A",
+    "B",
+    "C"
+  ],
+  "title_lanes": {
+    "A": [
+      "\\bdata analyst",
+      "\\banalytics\\b",
+      "\\bbusiness intelligence",
+      "\\bbi analyst",
+      "\\breporting analyst",
+      "\\bdata quality",
+      "\\bresearch data",
+      "\\boperations analyst",
+      "\\binsights? analyst",
+      "\\bdata (?:associate|specialist|coordinator)",
+      "\\bresearch analyst",
+      "\\bquantitative analyst",
+      "\\bproduct analyst",
+      "\\bjunior analyst",
+      "\\banalyst\\b"
+    ],
+    "B": [
+      "\\bsoftware engineer",
+      "\\bsoftware developer",
+      "\\b(?:ai|ml|machine learning|llm|applied ai|genai) engineer",
+      "\\bmachine learning\\b",
+      "\\bdata scientist",
+      "\\bdata engineer",
+      "\\bai (?:research|evaluation|quality|specialist|associate|trainer)",
+      "\\bmodel evaluat",
+      "\\bevals?\\b",
+      "\\b(?:qa|test|automation) engineer",
+      "\\bsoftware (?:qa|test)",
+      "\\bresearch engineer",
+      "\\bforward deployed",
+      "\\bsolutions engineer",
+      "\\bnew grad",
+      "\\bentry[- ]level",
+      "\\bdeployment (?:engineer|strategist|specialist)",
+      "\\bimplementation engineer",
+      "\\bai (?:developer|deployment|solutions|application|agent)",
+      "\\b(?:llm|genai|gen ai|agent|prompt) (?:developer|engineer)",
+      "\\bcustomer engineer",
+      "\\bai/ml\\b"
+    ],
+    "C": [
+      "\\brobot",
+      "\\bteleop",
+      "\\bdata collect",
+      "\\bdata operations",
+      "\\bdata ops\\b",
+      "\\bannotat",
+      "\\blabel(?:ing|er|ling)\\b",
+      "\\bai data\\b",
+      "\\bhumanoid",
+      "\\bautonomy (?:operator|specialist|test)",
+      "\\bvehicle operator",
+      "\\btest operator",
+      "\\bfield (?:operator|test|specialist)",
+      "\\bpilot operator",
+      "\\bembodied",
+      "\\brobot(?:ics)? operations",
+      "\\bfleet operations",
+      "\\boperations (?:technician|specialist|associate)\\b.*\\b(?:robot|autonomy|vehicle|data)"
+    ]
+  },
+  "exclude_title": [
+    "\\bsenior\\b",
+    "\\bsr\\.?\\b",
+    "\\bstaff\\b",
+    "\\bprincipal\\b",
+    "\\blead\\b",
+    "\\bmanager\\b",
+    "\\bdirector\\b",
+    "\\bhead of\\b",
+    "\\bvp\\b",
+    "\\bvice president",
+    "\\barchitect\\b",
+    "\\bintern(?:ship)?\\b",
+    "\\bco-?op\\b",
+    "\\bph\\.?d\\b",
+    "\\bpostdoc",
+    "\\bfellow(?:ship)?\\b",
+    "\\b(?:ii|iii|iv)\\b",
+    "\\b[2-5]\\s*$",
+    "\\bexpert\\b",
+    "\\bdistinguished\\b",
+    "\\bsupervisor\\b",
+    "\\bcounsel\\b",
+    "\\brecruit",
+    "\\bsales\\b",
+    "\\baccount executive",
+    "\\bfuture openings?\\b",
+    "\\btalent (?:pool|community)\\b",
+    "\\bgrants?\\b",
+    "\\b[a-z]+[- ]speakers?\\b"
+  ],
+  "us_locations": [
+    "united states",
+    "\\busa?\\b",
+    "\\bu\\.s\\.",
+    "remote\\s*[-(,]?\\s*(?:us|usa|united states|north america)",
+    "california|new york|texas|washington|massachusetts|colorado|illinois|georgia|oregon|arizona|pennsylvania|virginia|michigan|north carolina|florida",
+    "san francisco|bay area|san jose|palo alto|mountain view|sunnyvale|santa clara|menlo park|redwood city|south san francisco|oakland|berkeley|san mateo|foster city|san diego|los angeles|irvine|santa monica|el segundo|pasadena|sacramento|seattle|bellevue|redmond|boston|cambridge|somerville|new york city|nyc|brooklyn|austin|dallas|houston|denver|boulder|chicago|atlanta|pittsburgh|phoenix|tempe|chandler|scottsdale|portland|salt lake|miami|detroit|ann arbor|philadelphia|raleigh|durham|washington,? d\\.?c|arlington|columbus|minneapolis|nashville|las vegas|hayward|fremont|milpitas|livermore|san carlos|burlingame|emeryville|novato|carlsbad|la jolla"
+  ],
+  "non_us_locations": [
+    "\\buk\\b|united kingdom|london|england|scotland|ireland|dublin",
+    "canada|toronto|vancouver|montreal|ottawa|calgary|waterloo",
+    "india|bangalore|bengaluru|hyderabad|pune|mumbai|delhi|gurgaon|chennai|noida",
+    "germany|berlin|munich|france|paris|netherlands|amsterdam|spain|madrid|barcelona|italy|poland|warsaw|krakow|portugal|lisbon|sweden|stockholm|switzerland|zurich|denmark|norway|finland|belgium|austria|czech|romania|hungary|greece|europe|emea",
+    "china|beijing|shanghai|shenzhen|hong kong|taiwan|taipei|japan|tokyo|korea|seoul|singapore|australia|sydney|melbourne|new zealand|philippines|manila|vietnam|indonesia|malaysia|thailand|apac",
+    "mexico|brazil|são paulo|sao paulo|argentina|colombia|chile|peru|latam|israel|tel aviv|uae|dubai|saudi|egypt|nigeria|kenya|south africa|turkey|istanbul|pakistan",
+    "estonia|latvia|lithuania|ukraine|bulgaria|serbia|croatia|slovakia|slovenia|bosnia|albania|cyprus|malta|luxembourg|iceland|athens|morocco|tunisia|ghana|qatar|bahrain|kuwait|jordan|lebanon|sri lanka|bangladesh|nepal|costa rica|guatemala|uruguay|ecuador|venezuela|puerto rico\\b(?!.*\\b(?:us|usa)\\b)",
+    "kuala lumpur|jakarta|bangkok|hanoi|ho chi minh|osaka"
+  ],
+  "jd_char_limit": 12000,
+  "budgets": {
+    "queue_batch": 15,
+    "per_company_per_batch": 2,
+    "max_jd_reviews_per_run": 60,
+    "review_plan": {
+      "A": 24,
+      "B": 24,
+      "C": 12
+    },
+    "shortlist_min": 10,
+    "extra_reviews_if_below_min": 15
+  },
+  "us_state_codes": "(?:,\\s*|\\b)(?:AL|AK|AZ|AR|CA|CO|CT|DE|FL|GA|HI|ID|IL|IN|IA|KS|KY|LA|ME|MD|MA|MI|MN|MS|MO|MT|NE|NV|NH|NJ|NM|NY|NC|ND|OH|OK|OR|PA|RI|SC|SD|TN|TX|UT|VT|VA|WA|WV|WI|WY|DC)\\b(?![a-z])",
+  "hard_requirements": {
+    "_note": "Profile-dependent: block jobs whose clearly required years exceed max_years_required_ok, or that require an MS/PhD with no bachelor's alternative. Run `rescreen` after changing this.",
+    "enabled": true,
+    "max_years_required_ok": 3,
+    "block_advanced_degree": true
+  }
+}

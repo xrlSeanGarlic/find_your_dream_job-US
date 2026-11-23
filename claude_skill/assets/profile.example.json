@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "updated_on": "2026-01-01",
+  "source": "Fictional example. Replace every fact with your own confirmed facts; keep the IDs stable once reviews cite them.",
+  "facts": {
+    "work_auth": "Example: F-1 student on OPT (EAD approved); a STEM OPT extension would need an E-Verify employer.",
+    "education": "B.S. in Statistics (example degree).",
+    "sql": "Wrote SQL joins and aggregates to clean and summarize course datasets.",
+    "python_ml": "Python with pandas, scikit-learn and PyTorch in class projects.",
+    "data_quality_project": "Documented data-quality checks and charted findings in a class project.",
+    "teleop_project": "Recorded and labeled robot teleoperation episodes in a university lab project.",
+    "llm_app": "Built a small LLM-based assistant prototype that answers questions from a document set."
+  },
+  "resumes": {
+    "A": {"name": "Data Analyst", "targets": "analyst, reporting, data quality, research data"},
+    "B": {"name": "Software/AI Engineer", "targets": "junior ML / AI application engineer, AI evaluation, test automation"},
+    "C": {"name": "Robotics Data", "targets": "robot operation, teleop, data collection, annotation/QA"}
+  },
+  "target_keywords": ["data analyst", "machine learning engineer", "robot data collection"]
+}
